@@ -5,6 +5,11 @@ public class Person {
     protected String firstName;
     protected String lastName;
 
+    public String sortName() {
+        return String.format("%s, %s", lastName, firstName);
+    }
+
+
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -13,4 +18,5 @@ public class Person {
     public String fullName() {
         return String.format("%s %s", firstName, lastName);
     }
+
 }
